@@ -1,9 +1,26 @@
 {
-  "title": "Right Command + IJKL = Arrows, Alone Right Command = F13",
+  "title": "Right Command + IJKL = arrows, alone Right Command = EN, both Commands = RU",
   "rules": [
     {
       "description": "Right Command = EN / Right Command + Left Command = RU",
       "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "mandatory": ["left_command"]
+            }
+          },
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "input_source_id": "me.tonsky.keyboardlayout.helix.russian-helix",
+                "language": "ru"
+              }
+            }
+          ]
+        },
         {
           "type": "basic",
           "from": {
@@ -28,25 +45,7 @@
               }
             }
           ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_command",
-            "modifiers": {
-              "mandatory": ["left_command"]
-            }
-          },
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "me.tonsky.keyboardlayout.helix.russian-helix",
-                "language": "ru"
-              }
-            }
-          ]
         }
-
       ]
     },
     {
