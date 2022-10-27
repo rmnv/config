@@ -1,8 +1,8 @@
 {
-  "title": "right_command + j/i/k/l to arrow keys, if single — f13",
+  "title": "Right Command + IJKL = Arrows, Alone Right Command = F13",
   "rules": [
     {
-      "description": "Change right_command + i/j/k/l to Arrows",
+      "description": "Alone Right Command = F13",
       "manipulators": [
         {
           "type": "basic",
@@ -25,7 +25,13 @@
               "key_code": "f13"
             }
           ]
-        },
+        }
+
+      ]
+    },
+    {
+      "description": "Right Command + IJKL = Arrows",
+      "manipulators": [
         {
           "type": "basic",
           "from": {
