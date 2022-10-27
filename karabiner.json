@@ -37,7 +37,7 @@
               "mandatory": ["left_command"]
             }
           },
-          "to_if_alone": [
+          "to": [
             {
               "select_input_source": {
                 "input_source_id": "me.tonsky.keyboardlayout.helix.russian-helix",
