@@ -50,6 +50,36 @@
       ]
     },
     {
+      "description": "Button5 = Ctrl, Button4 = Ctrl + Left Command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "button5"
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "button4"
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            },
+            {
+              "key_code": "left_command"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Command + IJKL = arrows, Right Command + H = Backspace",
       "manipulators": [
         {
