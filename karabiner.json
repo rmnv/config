@@ -70,7 +70,7 @@
           },
           "to": [
             {
-              "key_code": "caps_lock"
+              "key_code": "left_control"
             },
             {
               "key_code": "left_command"
